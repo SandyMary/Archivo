@@ -275,6 +275,9 @@ y prepararlo para Subirlo al repositorio Remoto
 Actualizar en remoto
 ==========================		
 Configurar mi usuario y correo
+$ git config --global user.name "SandyMary"
+$ git config --global user.email exzsam@hotmail.com
+
 
 
 Verificar cambios en mi archivo
@@ -282,7 +285,7 @@ git status
 
 
 
-Agregar el archivo (s) Actualizados (Modificados)
+1. Agregar el archivo (s) Actualizados (Modificados)
 git add <nombre_archivo>
 
 Abreviatura si se quiere agregar todo el contenido
@@ -293,3 +296,20 @@ Ej.
 	. Comodin punto agrega todo el contenido
 
 
+Verificar antes del commit
+git status
+	(Verde)
+
+	
+2. Enviar a Staging Area (Area de preparación)
+git commit -m "<mensaje>"
+
+Ej. 
+git commit -m "Actualizacion de README"
+
+
+3. Enviar al git Directory (Directorio Remoto - Repositorio)
+git push <origen> <remoto-rama>
+
+Ej.
+git push origin master
