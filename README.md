@@ -313,3 +313,28 @@ git push <origen> <remoto-rama>
 
 Ej.
 git push origin master
+
+https://github.com/SandyMary/Archivo/invitations
+
+
+
+Hacer un repositorio Privado a Publico
+--------------------------------------------
+1. Dentro de mi repositorio
+Seleccionar Repositorio (Archivo)
+
+2. Ir a Configuración
+	Settings (repositorio)
+
+3. Ir a Danger Zone
+	(Inferior)	
+		Change repository visibility
+
+		Cambiar Visibiulidad	
+			Make Public
+				Escriba el Usuario y Repositorio
+					SandyMary/Archivo
+
+		Aceptar
+			I understand change repository visibility
+			
