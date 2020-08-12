@@ -1,5 +1,3 @@
-# Archivo
-------------------------------
 Documentación
 https://git-scm.com/book/es/v2
 
@@ -118,3 +116,180 @@ New
 	Pblico / Privado
 	Elegir (README)
 	Crear repositorio
+
+
+
+-----------------------------------------
+Bibicket
+
+https://bitbucket.org/
+
+Get Free
+1. Registrar Mi correo
+	Registrar Correo gmail
+	Nombre Usuario
+	Password de Bitbucket
+
+2. Seleccionar cuenta Google - Microsoft - Apple
+	Microsoft
+
+3. Autentificar ingresando al correo electronico
+	Escribir el correo y contraseña del Correo
+	(Siempre y cuando no este abierto el correo seleccionado)
+
+4. Ingresar Nombre de Usuario
+	SandyMary
+
+5. Ingresar perfil de experiencia
+	
+
+
+Configurar Perfil
+-----------------
+En la parte inferior
+	Profile	
+		Personal Settings
+
+
+Repositorio de Bitbucket
+-------------------------
+Create Repository
+Project: SECODUVI
+Repository: Archivo
+ Private
+
+ Create Repository
+
+
+
+
+
+Trabajo con Repositorios Remotos
+======================================
+Github
+--------------
+Ir a repositorio y seleccionar el repositorio a trabajar (Archivo)
+
+Clonar mi repositorio hacia local
+
+Opción <Code>
+	Seleccionar Clonar Repositorio
+		Hacer click (Boton de copiar URL)
+			Ej.
+			https://github.com/SandyMary/Archivo.git
+
+
+Acceso con Git Bash
+
+
+Ingresar a la carpeta Destino
+
+Si estamos en otra ruta
+
+Queremos trabajar con el usuario actual
+Cambiar de directorio de usuario
+cd ~ (ALT GR + ~)
+pwd
+cd Github
+
+
+Borrar carpeta
+rm <nombre_carpeta> <opciones>
+
+ej.
+rm Github -Rf
+- R Recursivo
+- f Aceptar todo (force)
+
+
+
+Crear Carpeta
+mkdir <nombre_carpeta>
+Ej.
+	mkdir Github
+
+Accesar a Carpeta
+cd <nombre_carpeta>
+
+cd Github
+
+Clonar repositorio
+---------------------------
+
+Con la URL del repositorio Remoto
+Ej.
+	https://github.com/SandyMary/Archivo.git
+
+Opcion A
+-----------
+Configuración Rapida - Si tienes algo como esto puedes hacer:
+Via ssh
+	Copiar: 
+		git@github.com:SandyMary/Ejemplo.git
+
+HTTP:
+	Copiar
+		https://github.com/SandyMary/Ejemplo.git		
+
+o Crear un repositorio desde linea de comandos
+
+echo "# Ejemplo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/SandyMary/Ejemplo.git
+git push -u origin master
+
+
+Empujamos los cambios a remoto desde linea de comandos
+git remote add origin https://github.com/SandyMary/Ejemplo.git
+git push -u origin master
+
+
+Opcion B
+---------
+Clonación de un repositorio existente
+	https://github.com/SandyMary/Archivo.git
+
+En git Bash ubicarnos en la carpeta destino
+
+cd /c/Users/Klvst3r/Github
+
+
+Clonar
+git clone <URL>
+Ej.
+git clone https://github.com/SandyMary/Archivo.git
+
+En la ventana de Login
+	Colocar credenciales
+		UserName:
+		Pass:
+		
+Actualizar el archivo
+
+y prepararlo para Subirlo al repositorio Remoto
+
+
+
+Actualizar en remoto
+==========================		
+Configurar mi usuario y correo
+
+
+Verificar cambios en mi archivo
+git status
+
+
+
+Agregar el archivo (s) Actualizados (Modificados)
+git add <nombre_archivo>
+
+Abreviatura si se quiere agregar todo el contenido
+Ej.
+	10 archivos
+
+	git add .
+	. Comodin punto agrega todo el contenido
+
+
