@@ -337,4 +337,134 @@ Seleccionar Repositorio (Archivo)
 
 		Aceptar
 			I understand change repository visibility
-			
+
+
+Trsbajo remoto con Bitbucket
+===============================
+Infgresar a Bitbucket con el login (Microsoft)			
+
+Ir a repositorios
+
+Clonar mi repositorio hacia local
+
+Voy a obtener la liga de clonacion
+Ej.
+	git clone https://SandyMary@bitbucket.org/SandyMary/archivo.git 
+
+
+En git Bash (Terminal)
+
+Posicionar en la carpeta de trabajo local
+
+
+pwd
+cd ..
+ls
+cd Bitbucket
+ls
+
+Directorio de trabajo 
+Ej.
+
+/home/klvst3r/Bitbucket
+
+
+git clone https://SandyMary@bitbucket.org/SandyMary/archivo.git
+
+
+Cambiar contraseña de usuario en Bitbucket
+------
+Ir al avatar (Parte inferior izquierda)
+	Personal Settings
+		Para cambiar Nombre, Pssword Desde 
+			Actualizar Atlasian Acoun
+				https://id.atlassian.com/manage-profile/profile-and-visibility
+
+En seguridad
+	Cambiar Contraseña
+		Sandy-2020
+
+
+
+Acceso Grupal
+Dentro del repositorio (Archivo)
+	En el menu lateral ir a 
+		Reposito Settings
+			Usuario y Acceso Grupal
+				Agregarmos la cuenta de correo para relaizar la invitacion
+					Agregamos los permisos
+						Enviamos Invitación
+
+
+El usuario aceptara la invitacion desde el correo 
+Al aceptar ala inviatación me solicitacita Autentificación
+
+En este caso por medio del correo electronico
+ej.
+	klvst3r@gmail.com 
+
+Clone el repositorio y en la terminal me autentifico con mi password de la cuenta de Bitbucket <Klvst3r>
+Ingresar con password de Bitbucket en local
+
+
+
+Agregar contenido al repositorio remoto
+-------------------------------------------
+En el directorio del repositorio en local
+
+ej.
+	/home/klvst3r/Bitbucket/archivo
+
+
+1. En terinal verificar el estado de los archivos modificados
+git status 
+
+
+2. Agregar al staging area 
+	git add <nombre_archivo>
+
+	o 
+
+
+	git add .
+
+3. Preparar el commit el git directory
+
+	git commit -m "Se agrega configuracion de Bitbucket"	
+
+
+4. Actualizar el contenido en remoto
+	git push origin master
+
+
+
+
+Detallar cambios en un archivo modificados
+-------------------------------------------
+
+Commando git diff <archivo>
+
+Ej.
+	git diff Config-Bitbucket
+
+
+
+Problema de Acceso en Bitbucket
+-------------------------
+
+Si tenemos asociado una cuenta de Microsoft - Google o Apple al querer actualizar en una maquina distinata del originen, se generara un conclicto en las sesiones, por lo que debo cambiar la contraseña desde 
+
+Cerramos sesiones
+	1. Colocamos el corre electronico
+	2. Puksar el boton "Haz olvidado tu contraseña"
+	3. Restablecer password
+	4. Se generara una solicitud de cambio en el correo.
+	5. Cambiar o establecer el nuevo password 
+	6. Intenar ingresar nuevamente con la nueva clave.
+	
+
+	
+
+
+
+
